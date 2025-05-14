@@ -76,6 +76,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -90,6 +92,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -104,6 +108,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -118,6 +124,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,25 +136,35 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="unw\platform\win32\win32_unw_file.c" />
+    <ClCompile Include="unw\file\unw_file.c" />
     <ClCompile Include="unw\image\unw_image.c" />
-    <ClCompile Include="unw\input\platform\win32_unw_input.c" />
+    <ClCompile Include="unw\image\unw_shape.c" />
+    <ClCompile Include="unw\platform\win32\win32_unw_input.c" />
     <ClCompile Include="unw\input\unw_input.c" />
+    <ClCompile Include="unw\platform\win32\win32_unw_util.c" />
     <ClCompile Include="unw\util\unw_mem.c" />
     <ClCompile Include="unw\util\unw_string.c" />
+    <ClCompile Include="unw\util\unw_time.c" />
     <ClCompile Include="unw\util\unw_util.c" />
-    <ClCompile Include="unw\window\platform\win32_unw_window.c" />
+    <ClCompile Include="unw\platform\win32\win32_unw_window.c" />
     <ClCompile Include="unw\window\unw_window.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="unw\input\platform\win32_unw_input.h" />
+    <ClInclude Include="unw\platform\win32\win32_unw_file.h" />
+    <ClInclude Include="unw\platform\win32\win32_unw_input.h" />
+    <ClInclude Include="unw\unw.h" />
+    <ClInclude Include="unw\unw_file.h" />
     <ClInclude Include="unw\unw_image.h" />
     <ClInclude Include="unw\unw_input.h" />
     <ClInclude Include="unw\image\unw_shape.h" />
     <ClInclude Include="unw\unw_util.h" />
     <ClInclude Include="unw\unw_window.h" />
+    <ClInclude Include="unw\platform\win32\win32_unw_util.h" />
     <ClInclude Include="unw\util\unw_mem.h" />
     <ClInclude Include="unw\util\unw_string.h" />
-    <ClInclude Include="unw\window\platform\win32_unw_window.h" />
+    <ClInclude Include="unw\util\unw_time.h" />
+    <ClInclude Include="unw\platform\win32\win32_unw_window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
