@@ -18,5 +18,58 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="unw\image\unw_image.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unw\input\unw_input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unw\util\unw_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unw\util\unw_mem.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unw\util\unw_string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unw\window\platform\win32_unw_window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unw\window\unw_window.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unw\input\platform\win32_unw_input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="unw\unw_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\unw_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\unw_input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\unw_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\image\unw_shape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\util\unw_mem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\util\unw_string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\window\platform\win32_unw_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\input\platform\win32_unw_input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

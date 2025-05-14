@@ -128,6 +128,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="unw\image\unw_image.c" />
+    <ClCompile Include="unw\input\platform\win32_unw_input.c" />
+    <ClCompile Include="unw\input\unw_input.c" />
+    <ClCompile Include="unw\util\unw_mem.c" />
+    <ClCompile Include="unw\util\unw_string.c" />
+    <ClCompile Include="unw\util\unw_util.c" />
+    <ClCompile Include="unw\window\platform\win32_unw_window.c" />
+    <ClCompile Include="unw\window\unw_window.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="unw\input\platform\win32_unw_input.h" />
+    <ClInclude Include="unw\unw_image.h" />
+    <ClInclude Include="unw\unw_input.h" />
+    <ClInclude Include="unw\image\unw_shape.h" />
+    <ClInclude Include="unw\unw_util.h" />
+    <ClInclude Include="unw\unw_window.h" />
+    <ClInclude Include="unw\util\unw_mem.h" />
+    <ClInclude Include="unw\util\unw_string.h" />
+    <ClInclude Include="unw\window\platform\win32_unw_window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
