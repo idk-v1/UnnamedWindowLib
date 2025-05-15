@@ -33,13 +33,28 @@
     <ClCompile Include="unw\util\unw_string.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="unw\window\platform\win32_unw_window.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="unw\window\unw_window.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="unw\input\platform\win32_unw_input.c">
+    <ClCompile Include="unw\platform\win32\win32_unw_file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unw\file\unw_file.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unw\image\unw_shape.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unw\platform\win32\win32_unw_input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unw\platform\win32\win32_unw_util.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unw\util\unw_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="unw\platform\win32\win32_unw_window.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -65,10 +80,37 @@
     <ClInclude Include="unw\util\unw_string.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="unw\window\platform\win32_unw_window.h">
+    <ClInclude Include="unw\platform\win32\win32_unw_file.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="unw\input\platform\win32_unw_input.h">
+    <ClInclude Include="unw\platform\win32\win32_unw_imageFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\platform\win32\win32_unw_input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\unw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\unw_file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\platform\win32\win32_unw_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\util\unw_time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\platform\win32\win32_unw_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\unw_memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\unw_time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unw\unw_string.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

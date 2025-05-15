@@ -152,12 +152,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="unw\platform\win32\win32_unw_file.h" />
+    <ClInclude Include="unw\platform\win32\win32_unw_imageFormat.h" />
     <ClInclude Include="unw\platform\win32\win32_unw_input.h" />
     <ClInclude Include="unw\unw.h" />
     <ClInclude Include="unw\unw_file.h" />
     <ClInclude Include="unw\unw_image.h" />
     <ClInclude Include="unw\unw_input.h" />
     <ClInclude Include="unw\image\unw_shape.h" />
+    <ClInclude Include="unw\unw_memory.h" />
+    <ClInclude Include="unw\unw_time.h" />
     <ClInclude Include="unw\unw_util.h" />
     <ClInclude Include="unw\unw_window.h" />
     <ClInclude Include="unw\platform\win32\win32_unw_util.h" />
@@ -165,6 +168,7 @@
     <ClInclude Include="unw\util\unw_string.h" />
     <ClInclude Include="unw\util\unw_time.h" />
     <ClInclude Include="unw\platform\win32\win32_unw_window.h" />
+    <ClInclude Include="unw\unw_string.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

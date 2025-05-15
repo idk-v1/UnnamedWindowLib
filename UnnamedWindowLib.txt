@@ -1,0 +1,162 @@
+UnNamed Window library (unw)
+
+Modules:
+Window
+Image
+Input
+Time
+File
+String
+Memory
+
+Objects:
+
+  Window:
+    void* handle;
+    char* title;
+    vec2  pos;
+    vec2  size;
+    Image frameBuf;
+    uint  flags;
+
+  Image:
+    byte* pixels;
+    vec2  size;
+
+  File:
+    char* name;
+    uint  size;
+    uint  createDate;
+    uint  modifyDate;
+    uint  flags;
+
+  Array:
+    type* data;
+    uint  length;
+    uint  capacity;
+
+  String: (Array<char>)
+    char* data;
+    uint  length;
+    uint  capacity;
+
+
+Window --------------------------------------------------------------------------------------------
+Windows are used by passing a handle thru functions
+Windows are stored in an internal buffer
+
+uint  window(char* title, uint width, uint height, int x, int y, uint flags)
+char* window_getTitle(uint window)
+void  window_setTitle(uint window, char* title)
+
+vec2  window_getSize(uint window)
+void  window_setSize(uint window, uint width, uint height)
+vec2  window_getPos(uint window)
+void  window_setPos(uint window, int x, int y)
+
+void  window_maximize(uint window)
+void  window_minimize(uint window)
+void  window_normalize(uint window)
+void  window_fullscreen(uint window)
+void  window_setVisible(uint window, bool state)
+
+void  window_display(uint window)
+
+void  window_close(uint window)
+
+
+Image ---------------------------------------------------------------------------------------------
+Images are used by passing pointers thru functions
+The user stores the images
+
+Image image(uint width, uint height, Color fill)
+
+vec2  image_getSize(Image* image)
+void  image_setSize(Image* image, uint width, uint height)
+
+void  image_fill(Image* image, Color fill)
+void  image_replace(Image* image, Color target, Color newColor)
+
+void  image_drawRect(Image* image, int x, int y, int width, int height, Color color, bool fill)
+void  image_drawCircle(Image* image, int x, int y, int radius, Color color, bool fill)
+void  image_drawLine(Image* image, int sX, int xY, int eX, int eY, Color color)
+
+void  image_drawImage(Image* image, Image* other, int x, int y, int width, int height, int offsetX, int offsetY)
+
+void  image_delete(Image* image)
+
+
+Input ---------------------------------------------------------------------------------------------
+Input is not an object
+It just gets the system state
+
+vec2  input_getMouse()
+void  input_setMouse(int x, int y)
+
+This and the next section do the same thing
+Key and mouse button states are stored in the same giant array
+
+bool  input_isPressed(uint button)
+bool  input_isReleased(uint button)
+bool  input_isHeld(uint button)
+void  input_setClick(uint button, bool state)
+void  input_setKey(uint key, bool state)
+
+Returns the last key pressed with shift modifiers applied
+char  input_typed()
+
+
+Time ----------------------------------------------------------------------------------------------
+Not an object
+Just gets the system time in milliseconds
+
+uint  time_now()
+uint  time_diff(uint last)
+bool  time_timer(uint* last, uint length)
+
+void  time_sleep(uint time)
+
+
+File ----------------------------------------------------------------------------------------------
+Files and directories are treated as the same thing
+Files are stored by the user
+
+bool  file_exists(char* path, char* name)
+bool  file_delete(char* path, char* name)
+bool  file_create(char* path, char* name)
+
+Array file_getFilesInDir(char* path)
+
+char* file_getCurrentDir()
+bool  file_setCurrentDir(char* path)
+
+
+String --------------------------------------------------------------------------------------------
+
+
+Memory --------------------------------------------------------------------------------------------
+
+void* mem_alloc(uint size)
+void* mem_allocN(uint count, uint elemSize)
+#define mem_allocT(count, type)
+
+bool  mem_realloc(void** ptr, uint size)
+bool  mem_reallocN(void** ptr, uint count, uint elemSize)
+#define mem_reallocT(ptr, count, type)
+
+void  mem_free(void* ptr)
+
+
+#define ARRAY_TEMPLATE(type, name)
+
+Array array(uint size)
+
+bool  array_push(Array* array, type data)
+type  array_pop(Array* array)
+
+bool  array_insert(Array* array, type data, uint pos)
+type  array_remove(Array* array, uint pos)
+
+void  array_clear(Array* array)
+
+void  array_delete(Array* array)
