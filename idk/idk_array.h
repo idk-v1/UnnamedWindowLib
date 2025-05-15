@@ -1,0 +1,81 @@
+#pragma once
+
+#define IDK_ARRAY_TEMPLATE(type, name) \
+typedef struct name \
+{ \
+	type* data; \
+	idk_uint length; \
+	idk_uint capacity; \
+} name; \
+\
+static name name##_create(idk_uint size) \
+{ \
+	name array; \
+	array.data = idk_mem_allocNT(size, type); \
+	array.capacity = size; \
+	array.length = 0; \
+	return array; \
+} \
+\
+static bool name##_push(name* array, type data) \
+{ \
+	if (array->length + 1 > array->capacity) \
+	{ \
+		if (idk_mem_reallocNT(&array->data, array->capacity * 2, type)) \
+			array->capacity *= 2; \
+		else \
+			return false; \
+	} \
+	array->data[array->length++] = data; \
+	return true; \
+} \
+\
+static type name##_pop(name* array) \
+{ \
+	type ret = { 0 }; \
+	if (array->length > 0) \
+		ret = array->data[--array->length]; \
+	return ret; \
+} \
+\
+static bool name##_insert(name* array, type data, idk_uint pos) \
+{ \
+	if (pos > array->length) \
+		return false; \
+	if (array->length + 1 > array->capacity) \
+	{ \
+		if (idk_mem_reallocNT(&array->data, array->capacity * 2, type)) \
+			array->capacity *= 2; \
+		else \
+			return false; \
+	} \
+	for (idk_uint i = array->length; i >= pos; i--) \
+		array->data[i] = array->data[pos]; \
+	array->data[pos] = data; \
+	return true; \
+} \
+\
+static type name##_remove(name* array, idk_uint pos) \
+{ \
+	type ret = { 0 }; \
+	if (pos < array->length) \
+	{ \
+		ret = array->data[pos]; \
+		for (idk_uint i = pos; i < array->length - 1; i++) \
+			array->data[i] = array->data[i + 1]; \
+	} \
+	return ret; \
+} \
+\
+static void name##_clear(name* array) \
+{ \
+	array->length = 0; \
+} \
+\
+static void name##_delete(name* array) \
+{ \
+	idk_mem_free(array->data); \
+	array->data = NULL; \
+	array->length = 0; \
+	array->capacity = 0; \
+}

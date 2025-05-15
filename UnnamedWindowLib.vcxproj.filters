@@ -110,5 +110,11 @@
     <ClInclude Include="idk\idk_string.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="idk\idk_colorFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="idk\idk_array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
