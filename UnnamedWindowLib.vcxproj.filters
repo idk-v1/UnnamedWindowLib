@@ -59,16 +59,16 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="unw\unw_window.h">
+    <ClInclude Include="idk\idk_window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="unw\unw_image.h">
+    <ClInclude Include="idk\idk_image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="unw\unw_input.h">
+    <ClInclude Include="idk\idk_input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="unw\unw_util.h">
+    <ClInclude Include="idk\idk_util.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="unw\image\unw_shape.h">
@@ -89,7 +89,7 @@
     <ClInclude Include="unw\platform\win32\win32_unw_input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="unw\unw_file.h">
+    <ClInclude Include="idk\idk_file.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="unw\platform\win32\win32_unw_util.h">
@@ -101,13 +101,13 @@
     <ClInclude Include="unw\platform\win32\win32_unw_window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="unw\unw_memory.h">
+    <ClInclude Include="idk\idk_memory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="unw\unw_time.h">
+    <ClInclude Include="idk\idk_time.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="unw\unw_string.h">
+    <ClInclude Include="idk\idk_string.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

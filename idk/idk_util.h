@@ -4,14 +4,14 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-typedef uint8_t unw_byte;
+typedef uint8_t idk_byte;
 
-typedef struct unw_vec2
+typedef struct idk_vec2
 {
 	int64_t x, y;
-} unw_vec2;
+} idk_vec2;
 
-typedef struct unw_rect
+typedef struct idk_rect
 {
 	int64_t x, y, w, h;
-} unw_rect;
+} idk_rect;
