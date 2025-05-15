@@ -154,7 +154,6 @@
     <ClInclude Include="unw\platform\win32\win32_unw_file.h" />
     <ClInclude Include="unw\platform\win32\win32_unw_imageFormat.h" />
     <ClInclude Include="unw\platform\win32\win32_unw_input.h" />
-    <ClInclude Include="unw\unw.h" />
     <ClInclude Include="unw\unw_file.h" />
     <ClInclude Include="unw\unw_image.h" />
     <ClInclude Include="unw\unw_input.h" />
