@@ -62,6 +62,8 @@ void  window_setVisible(uint window, bool state)
 
 void  window_display(uint window)
 
+Window window_getObject(uint window)
+
 void  window_close(uint window)
 
 
