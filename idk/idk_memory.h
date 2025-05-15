@@ -1,5 +1,7 @@
 #pragma once
 
+#include "idk_util.h"
+
 static void idk_mem_free(void* ptr)
 {
 	if (ptr)

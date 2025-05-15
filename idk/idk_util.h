@@ -20,6 +20,3 @@ typedef struct idk_rect
 {
 	idk_int x, y, w, h;
 } idk_rect;
-
-#include "idk_memory.h"
-#include "idk_array.h"

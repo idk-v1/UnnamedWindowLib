@@ -1,5 +1,8 @@
 #pragma once
 
+#include "idk_util.h"
+#include "idk_memory.h"
+
 #define IDK_ARRAY_TEMPLATE(type, name) \
 typedef struct name \
 { \
