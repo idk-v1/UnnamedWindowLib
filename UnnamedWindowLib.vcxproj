@@ -148,6 +148,7 @@
     <ClInclude Include="idk\idk_time.h" />
     <ClInclude Include="idk\idk_util.h" />
     <ClInclude Include="idk\idk_window.h" />
+    <ClInclude Include="idk\idk_shape.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

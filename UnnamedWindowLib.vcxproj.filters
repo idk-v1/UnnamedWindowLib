@@ -50,5 +50,8 @@
     <ClInclude Include="idk\idk_window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="idk\idk_shape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

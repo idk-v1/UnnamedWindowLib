@@ -72,6 +72,16 @@ static type name##_remove(name* array, idk_uint pos) \
 	return ret; \
 } \
 \
+static bool name##_resize(name* array, idk_uint length) \
+{ \
+	if (idk_mem_reallocNT(&array->data, length, type)) \
+	{ \
+		array->capacity = length; \
+		return true; \
+	} \
+	return false; \
+} \
+\
 static void name##_clear(name* array) \
 { \
 	array->length = 0; \
