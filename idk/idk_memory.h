@@ -2,11 +2,7 @@
 
 #include "idk_util.h"
 
-static void idk_mem_free(void* ptr)
-{
-	if (ptr)
-		free(ptr);
-}
+#include <string.h>
 
 static void* idk_mem_alloc(idk_uint size)
 {
@@ -36,3 +32,17 @@ static bool idk_mem_realloc(void** ptr, idk_uint size)
 #define idk_mem_reallocN(ptr, count, elemSize) idk_mem_realloc(ptr, count * elemSize)
 #define idk_mem_reallocNT(ptr, count, type) idk_mem_realloc(ptr, count * sizeof(type))
 #define idk_mem_reallocT(ptr, type) idk_mem_realloc(ptr, sizeof(type))
+
+static void idk_mem_free(void* ptr)
+{
+	if (ptr)
+		free(ptr);
+}
+
+static void idk_mem_zero(void* ptr, idk_uint size)
+{
+	memset(ptr, 0, size);
+}
+#define idk_mem_zeroN(ptr, count, elemSize) idk_mem_zero(ptr, count * elemSize)
+#define idk_mem_zeroNT(ptr, count, type) idk_mem_zero(ptr, count * sizeof(type))
+#define idk_mem_zeroT(ptr, type) idk_mem_zero(ptr, sizeof(type))
