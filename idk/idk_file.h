@@ -2,14 +2,15 @@
 
 #include "idk_util.h"
 #include "idk_array.h"
+#include "idk_time.h"
 
 typedef struct idk_File
 {
 	char* name;
-	idk_uint createDate;
-	idk_uint modifyDate;
 	idk_uint size;
-	idk_flags isDir : 1;
+	idk_DateTime create;
+	idk_DateTime modify;
+	bool isDir;
 } idk_File;
 
 IDK_ARRAY_TEMPLATE(idk_File, idk_Directory)
