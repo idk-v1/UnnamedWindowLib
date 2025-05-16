@@ -38,3 +38,7 @@ static idk_Rect idk_rect(idk_int x, idk_int y, idk_int w, idk_int h)
 	rect.h = h;
 	return rect;
 }
+
+#define idk_min(left, right) ((left) < (right) ? (left) : (right))
+#define idk_max(left, right) ((left) > (right) ? (left) : (right))
+#define idk_clamp(minValue, value, maxValue) idk_min(idk_max(value, minValue), maxValue)
