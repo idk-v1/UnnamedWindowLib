@@ -90,7 +90,5 @@ static void name##_clear(name* array) \
 static void name##_delete(name* array) \
 { \
 	idk_mem_free(array->data); \
-	array->data = NULL; \
-	array->length = 0; \
-	array->capacity = 0; \
+    idk_mem_zero(array, sizeof(name)); \
 }
