@@ -1,19 +1,20 @@
-#include "idk/idk_array.h"
-
-IDK_ARRAY_TEMPLATE(int, intArray)
+#include "idk/idk_window.h"
+#include "idk/idk_input.h"
 
 int main(int argc, char* argv[])
 {
-	intArray array = intArray_create(10);
+	idk_HWindow window = idk_window("test", 800, 600, -1, -1, 0);
 
-	intArray_insert(&array, 5, 0);
-	intArray_push(&array, 2);
-	intArray_push(&array, 3);
-	intArray_insert(&array, 8, 1);
-	intArray_remove(&array, 0);
-	intArray_remove(&array, 2);
+	while (idk_window_isOpen(window))
+	{
+		idk_window_updateAll();
+		idk_input_update();
 
-	intArray_delete(&array);
+		idk_image_fill(idk_window_getFrameBuf(window), idk_color(0, 0, 0, 255));
+		idk_window_display(window);
+	}
+
+	idk_window_close(window);
 
 	return 0;
 }

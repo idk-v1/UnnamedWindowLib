@@ -38,8 +38,14 @@ void        idk_window_normalize(idk_HWindow window);
 void        idk_window_fullscreen(idk_HWindow window);
 void        idk_window_setVisible(idk_HWindow window, bool state);
 
-void        idk_window_display(idk_HWindow window);
-
 idk_Window* idk_window_getObject(idk_HWindow window);
+
+bool        idk_window_isOpen(idk_HWindow window);
+
+void        idk_window_update(idk_HWindow window);
+void        idk_window_updateAll();
+
+idk_Image*  idk_window_getFrameBuf(idk_HWindow window);
+void        idk_window_display(idk_HWindow window);
 
 void        idk_window_close(idk_HWindow window);

@@ -16,7 +16,7 @@ typedef struct idk_Vec2
 	idk_int x, y;
 } idk_Vec2;
 
-idk_Vec2 idk_vec2(idk_int x, idk_int y)
+static idk_Vec2 idk_vec2(idk_int x, idk_int y)
 {
 	idk_Vec2 vec;
 	vec.x = x;
@@ -29,7 +29,7 @@ typedef struct idk_Rect
 	idk_int x, y, w, h;
 } idk_Rect;
 
-idk_Rect idk_rect(idk_int x, idk_int y, idk_int w, idk_int h)
+static idk_Rect idk_rect(idk_int x, idk_int y, idk_int w, idk_int h)
 {
 	idk_Rect rect;
 	rect.x = x;
