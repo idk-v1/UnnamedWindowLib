@@ -30,6 +30,7 @@ static bool idk_mem_realloc(void** ptr, idk_uint size)
 				*ptr = temp;
 				return true;
 			}
+		}
 	return false;
 }
 #define idk_mem_reallocN(ptr, count, elemSize) idk_mem_realloc(ptr, count * elemSize)

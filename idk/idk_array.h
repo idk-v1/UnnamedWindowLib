@@ -52,9 +52,10 @@ static bool name##_insert(name* array, type data, idk_uint pos) \
 		else \
 			return false; \
 	} \
-	for (idk_uint i = array->length; i >= pos; i--) \
-		array->data[i] = array->data[pos]; \
+	for (idk_int i = array->length; i >= (idk_int)pos; i--) \
+		array->data[i + 1] = array->data[i]; \
 	array->data[pos] = data; \
+	array->length++; \
 	return true; \
 } \
 \
@@ -66,6 +67,7 @@ static type name##_remove(name* array, idk_uint pos) \
 		ret = array->data[pos]; \
 		for (idk_uint i = pos; i < array->length - 1; i++) \
 			array->data[i] = array->data[i + 1]; \
+		array->length--; \
 	} \
 	return ret; \
 } \

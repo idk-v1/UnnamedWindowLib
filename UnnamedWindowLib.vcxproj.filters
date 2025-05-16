@@ -18,48 +18,15 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="unw\image\unw_image.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="unw\input\unw_input.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="unw\util\unw_util.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="unw\util\unw_mem.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="unw\util\unw_string.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="unw\window\unw_window.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="unw\platform\win32\win32_unw_file.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="unw\file\unw_file.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="unw\image\unw_shape.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="unw\platform\win32\win32_unw_input.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="unw\platform\win32\win32_unw_util.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="unw\util\unw_time.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="unw\platform\win32\win32_unw_window.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="idk\idk_window.h">
+    <ClInclude Include="idk\idk_array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="idk\idk_colorFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="idk\idk_file.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="idk\idk_image.h">
@@ -68,52 +35,19 @@
     <ClInclude Include="idk\idk_input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="idk\idk_util.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="unw\image\unw_shape.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="unw\util\unw_mem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="unw\util\unw_string.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="unw\platform\win32\win32_unw_file.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="unw\platform\win32\win32_unw_imageFormat.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="unw\platform\win32\win32_unw_input.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="idk\idk_file.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="unw\platform\win32\win32_unw_util.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="unw\util\unw_time.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="unw\platform\win32\win32_unw_window.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="idk\idk_memory.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="idk\idk_time.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="idk\idk_string.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="idk\idk_colorFormat.h">
+    <ClInclude Include="idk\idk_time.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="idk\idk_array.h">
+    <ClInclude Include="idk\idk_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="idk\idk_window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
