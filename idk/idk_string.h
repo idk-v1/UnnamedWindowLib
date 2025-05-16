@@ -183,3 +183,35 @@ static char* idk_str_fromFloat(double num)
 {
 	return idk_sprintf("%f", num);
 }
+
+static int64_t idk_str_toInt(const char* str)
+{
+	return strtoll(str, NULL, 10);
+}
+static uint64_t idk_str_toUint(const char* str)
+{
+	return strtoull(str, NULL, 10);
+}
+static double idk_str_toFloat(const char* str)
+{
+	return strtod(str, NULL);
+}
+
+static int64_t idk_str_toIntD(char* str)
+{
+	int64_t ret = idk_str_toInt(str);
+	idk_str_delete(str);
+	return ret;
+}
+static uint64_t idk_str_toUintD(char* str)
+{
+	uint64_t ret = idk_str_toUint(str);
+	idk_str_delete(str);
+	return ret;
+}
+static double idk_str_toFloatD(char* str)
+{
+	double ret = idk_str_toFloat(str);
+	idk_str_delete(str);
+	return ret;
+}

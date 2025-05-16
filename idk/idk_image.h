@@ -12,6 +12,7 @@ typedef struct idk_Image
 
 
 idk_Image idk_image(idk_uint width, idk_uint height, idk_Color fill);
+idk_Image idk_imageL(const char* path);
 
 idk_Vec2  idk_image_getSize(idk_Image* image);
 void      idk_image_setSize(idk_Image* image, idk_uint width, idk_uint height);
