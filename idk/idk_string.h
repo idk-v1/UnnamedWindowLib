@@ -25,7 +25,7 @@ static void idk_str_delete(char* str)
 		free(str);
 }
 
-static char* idk_str_addKK(const char* left, const char* right)
+static char* idk_str_add(const char* left, const char* right)
 {
 	idk_uint leftSize = idk_str_len(left);
 	idk_uint rightSize = idk_str_len(right);
@@ -40,27 +40,27 @@ static char* idk_str_addKK(const char* left, const char* right)
 
 	return ret;
 }
-static char* idk_str_addDK(char* left, const char* right)
+static char* idk_str_addDL(char* left, const char* right)
 {
-	char* ret = idk_str_addKK(left, right);
+	char* ret = idk_str_add(left, right);
 	idk_str_delete(left);
 	return ret;
 }
-static char* idk_str_addKD(const char* left, char* right)
+static char* idk_str_addDR(const char* left, char* right)
 {
-	char* ret = idk_str_addKK(left, right);
+	char* ret = idk_str_add(left, right);
 	idk_str_delete(right);
 	return ret;
 }
-static char* idk_str_addDD(char* left, char* right)
+static char* idk_str_addDB(char* left, char* right)
 {
-	char* ret = idk_str_addKK(left, right);
+	char* ret = idk_str_add(left, right);
 	idk_str_delete(left);
 	idk_str_delete(right);
 	return ret;
 }
 
-static bool idk_str_addToK(char** left, const char* right)
+static bool idk_str_addTo(char** left, const char* right)
 {
 	if (left)
 	{
@@ -78,12 +78,12 @@ static bool idk_str_addToK(char** left, const char* right)
 }
 static bool idk_str_addToD(char** left, char* right)
 {
-	bool ret = idk_str_addToK(left, right);
+	bool ret = idk_str_addTo(left, right);
 	idk_str_delete(right);
 	return ret;
 }
 
-static char* idk_str_subK(const char* str, idk_uint pos, idk_uint size)
+static char* idk_str_sub(const char* str, idk_uint pos, idk_uint size)
 {
 	char* ret = NULL;
 	idk_uint length = idk_str_len(str);
@@ -101,7 +101,7 @@ static char* idk_str_subK(const char* str, idk_uint pos, idk_uint size)
 }
 static char* idk_str_subD(char* str, idk_uint pos, idk_uint size)
 {
-	char* ret = idk_str_subK(str, pos, size);
+	char* ret = idk_str_sub(str, pos, size);
 	idk_str_delete(str);
 	return ret;
 }
