@@ -26,4 +26,6 @@ void      idk_image_setPixelV(idk_Image* image, idk_Vec2 pos, idk_Color color);
 idk_Color idk_image_getPixel(idk_Image* image, idk_uint x, idk_uint y);
 idk_Color idk_image_getPixelV(idk_Image* image, idk_Vec2 pos);
 
+bool      idk_image_save(idk_Image* image, const char* path);
+
 void      idk_image_delete(idk_Image* image);
