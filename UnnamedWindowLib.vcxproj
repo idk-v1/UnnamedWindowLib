@@ -138,17 +138,17 @@
     <ClCompile Include="main.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="idk\idk_array.h" />
-    <ClInclude Include="idk\idk_colorFormat.h" />
-    <ClInclude Include="idk\idk_file.h" />
-    <ClInclude Include="idk\idk_image.h" />
-    <ClInclude Include="idk\idk_input.h" />
-    <ClInclude Include="idk\idk_memory.h" />
-    <ClInclude Include="idk\idk_string.h" />
-    <ClInclude Include="idk\idk_time.h" />
-    <ClInclude Include="idk\idk_util.h" />
-    <ClInclude Include="idk\idk_window.h" />
-    <ClInclude Include="idk\idk_shape.h" />
+    <ClInclude Include="idk\include\idk_array.h" />
+    <ClInclude Include="idk\include\idk_colorFormat.h" />
+    <ClInclude Include="idk\include\idk_file.h" />
+    <ClInclude Include="idk\include\idk_image.h" />
+    <ClInclude Include="idk\include\idk_input.h" />
+    <ClInclude Include="idk\include\idk_memory.h" />
+    <ClInclude Include="idk\include\idk_shape.h" />
+    <ClInclude Include="idk\include\idk_string.h" />
+    <ClInclude Include="idk\include\idk_time.h" />
+    <ClInclude Include="idk\include\idk_util.h" />
+    <ClInclude Include="idk\include\idk_window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
