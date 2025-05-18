@@ -1,8 +1,8 @@
-#include "idk/idk_file.h"
-#include "idk/idk_image.h"
-#include "idk/idk_input.h"
-#include "idk/idk_time.h"
-#include "idk/idk_window.h"
+#include "include/idk_file.h"
+#include "include/idk_image.h"
+#include "include/idk_input.h"
+#include "include/idk_time.h"
+#include "include/idk_window.h"
 
 int main(int argc, char* argv[])
 {
