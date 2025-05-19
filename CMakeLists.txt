@@ -3,6 +3,8 @@ project(UnnamedWindowLib C)
 
 set(CMAKE_C_STANDARD 11)
 
+message(STATUS "Configuring UnnamedWindowLib")
+
 # Header-only library
 add_library(UnnamedWindowLib INTERFACE)
 
