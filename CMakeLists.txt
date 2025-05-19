@@ -6,6 +6,9 @@ set(CMAKE_C_STANDARD 11)
 message(STATUS "Configuring UnnamedWindowLib")
 
 # Header-only library
+# Save project root as a variable (this is the correct source dir)
+set(UNNAMEDWINDOWLIB_ROOT_DIR ${CMAKE_CURRENT_LIST_DIR})
+
 add_library(UnnamedWindowLib INTERFACE)
 
 # For Later when you have sourcs
@@ -16,12 +19,9 @@ add_library(UnnamedWindowLib INTERFACE)
 # )
 #
 #
-
-
-# Public headers location
 target_include_directories(UnnamedWindowLib INTERFACE
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/idk/include>
-        $<INSTALL_INTERFACE:include>  # Optional if planning to install the library
+        $<BUILD_INTERFACE:${UNNAMEDWINDOWLIB_ROOT_DIR}/idk/include>
+        $<INSTALL_INTERFACE:include>
 )
 
 # use main.c as a test
