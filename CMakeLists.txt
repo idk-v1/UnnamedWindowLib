@@ -18,7 +18,8 @@ add_library(UnnamedWindowLib INTERFACE)
 
 # Public headers location
 target_include_directories(UnnamedWindowLib INTERFACE
-        ${CMAKE_CURRENT_SOURCE_DIR}/idk/include
+        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/idk/include>
+        $<INSTALL_INTERFACE:include>  # Optional if planning to install the library
 )
 
 # use main.c as a test
