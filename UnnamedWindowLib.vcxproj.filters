@@ -20,37 +20,37 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="idk\idk_array.h">
+    <ClInclude Include="idk\include\idk_array.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="idk\idk_colorFormat.h">
+    <ClInclude Include="idk\include\idk_colorFormat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="idk\idk_file.h">
+    <ClInclude Include="idk\include\idk_file.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="idk\idk_image.h">
+    <ClInclude Include="idk\include\idk_image.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="idk\idk_input.h">
+    <ClInclude Include="idk\include\idk_input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="idk\idk_memory.h">
+    <ClInclude Include="idk\include\idk_memory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="idk\idk_string.h">
+    <ClInclude Include="idk\include\idk_shape.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="idk\idk_time.h">
+    <ClInclude Include="idk\include\idk_string.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="idk\idk_util.h">
+    <ClInclude Include="idk\include\idk_time.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="idk\idk_window.h">
+    <ClInclude Include="idk\include\idk_util.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="idk\idk_shape.h">
+    <ClInclude Include="idk\include\idk_window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
