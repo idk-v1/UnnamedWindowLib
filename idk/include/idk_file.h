@@ -1,7 +1,7 @@
 #pragma once
 
-#include "idk_util.h"
-#include "idk_array.h"
+#include "utility/"
+#include "utility/idk_array.h"
 #include "idk_time.h"
 
 typedef struct idk_File

@@ -1,6 +1,6 @@
 #pragma once
 
-#include "idk_util.h"
+#include "../utility/idk_util.h"
 
 typedef struct idk_Color
 {

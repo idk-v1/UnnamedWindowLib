@@ -1,5 +1,7 @@
 #pragma once
 
+#include "idk_imageStruct.h"
+
 void      idk_image_setRect(idk_Image* image, idk_int x, idk_int y, idk_int width, idk_int height, idk_Color color);
 void      idk_image_setRectV(idk_Image* image, idk_Vec2 pos, idk_Vec2 size, idk_Color color);
 void      idk_image_setRectR(idk_Image* image, idk_Rect rect, idk_Color color);
